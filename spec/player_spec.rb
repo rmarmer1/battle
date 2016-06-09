@@ -9,11 +9,11 @@ describe Player do
   subject(:player) { described_class.new('Player') }
   describe '#return_name' do
     it "should return name 'Player'" do
-      expect(player.return_name).to eq "Player"
+      expect(player.name).to eq "Player"
     end
     it "should return name 'Dave'" do
       player = Player.new('Dave')
-      expect(player.return_name).to eq "Dave"
+      expect(player.name).to eq "Dave"
     end
   end
 end
