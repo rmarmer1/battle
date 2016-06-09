@@ -11,7 +11,7 @@ require_relative "../../app"
       visit("/")
       fill_in('player1', with: 'Andrea')
       fill_in('player2', with: current_name)
-      click_button('Submit')
+      click_button('Play')
       expect(page).to have_content("#{current_name}'s HitPoints: 1")
     end 
   end  

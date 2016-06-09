@@ -3,3 +3,13 @@
 <p>Player1: <%= @player1 %></p>
 <p>Player2: <%= @player2 %></p>
 <p><%= @player2 %>'s HitPoints: 1</p>
+
+
+<div>
+<form action = "/play" method = "post">
+  <input type = "submit" value = 'Attack'>
+    </form>
+</div>
+<% if @attacked %>
+	<%= @player1 %> has attacked <%= @player2 %> 
+<%end%>
